@@ -1,0 +1,1 @@
+SELECT `u1`.Username,(SELECT `user`.Username FROM `user` WHERE `user`.`ID` = `u1`.Parent) AS userparenttname FROM `user` u1
